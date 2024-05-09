@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: '功能介绍',
-                to: '/docs/intro',
+                to: '/docs/head',
               },
             ],
           },
