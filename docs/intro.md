@@ -2,22 +2,27 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# 首页
 
-Let's discover **Docusaurus in less than 5 minutes**.
+首页主要为统计、排行、图表， **方便快速总览**。
 
-## Getting Started
+## 统计1
 
 Get started by **creating a new site**.
 
 Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-### What you'll need
+### 统计1-1
 
 - [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
   - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+#### 统计1-1-1
+
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+
+## 排行1
 
 Generate a new Docusaurus site using the **classic template**.
 
@@ -31,7 +36,7 @@ You can type this command into Command Prompt, Powershell, Terminal, or any othe
 
 The command also installs all necessary dependencies you need to run Docusaurus.
 
-## Start your site
+## 折线图1
 
 Run the development server:
 

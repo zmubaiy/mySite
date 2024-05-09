@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Create a Document
+# 实名管理
 
 Documents are **groups of pages** connected through:
 

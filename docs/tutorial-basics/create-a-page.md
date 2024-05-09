@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Create a Page
+# 用户列表
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
@@ -10,7 +10,7 @@ Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 - `src/pages/foo.md` → `localhost:3000/foo`
 - `src/pages/foo/bar.js` → `localhost:3000/foo/bar`
 
-## Create your first React Page
+## 新增用户
 
 Create a file at `src/pages/my-react-page.js`:
 
@@ -30,7 +30,7 @@ export default function MyReactPage() {
 
 A new page is now available at [http://localhost:3000/my-react-page](http://localhost:3000/my-react-page).
 
-## Create your first Markdown Page
+## 修改用户
 
 Create a file at `src/pages/my-markdown-page.md`:
 
@@ -41,3 +41,7 @@ This is a Markdown page
 ```
 
 A new page is now available at [http://localhost:3000/my-markdown-page](http://localhost:3000/my-markdown-page).
+
+## 删除用户
+
+批量删除用户（慎重删除）。
