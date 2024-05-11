@@ -4,29 +4,29 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: '易于使用',
+    title: 'linux',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus从头开始设计，易于安装用来让你的网站快速启动和运行。
+        乐于开源
       </>
     ),
   },
   {
-    title: '重视用户',
+    title: 'k8s',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus让你专注于你的文档，我们来做家务。继续将您的文档移到<code>docs</code> 目录中。
+        干货满满
       </>
     ),
   },
   {
-    title: '专业团队',
+    title: '运维',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        通过重用React扩展或自定义您的网站布局。Docusaurus可以在重用相同页眉和页脚的同时进行扩展。
+        持续更新
       </>
     ),
   },

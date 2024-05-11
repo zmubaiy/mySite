@@ -1,0 +1,53 @@
+/* 修改搜索框输入框的样式 */
+.docusaurus-search-Input {
+    border: 2px solid #ccc !important;
+    border-radius: 5px !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+  }
+  
+  /* 修改搜索框的背景颜色和边框 */
+  .docusaurus-search {
+    background-color: #f8f9fa !important;
+    border: none !important; /* 可能你不想要边框 */
+  }
+  
+  /* 修改搜索框的搜索按钮样式 */
+  .docusaurus-search-Button {
+    background-color: #007bff !important;
+    color: #fff !important;
+    border-radius: 5px !important;
+    padding: 8px 12px !important;
+    font-size: 16px !important;
+  }
+  
+  /* 修改搜索结果列表的样式 */
+  .docusaurus-search-SearchResults {
+    background-color: #fff !important;
+    border: 2px solid #ccc !important;
+    border-radius: 5px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    padding: 8px !important;
+    max-height: 300px !important;
+    overflow-y: auto !important;
+  }
+  
+  /* 修改搜索结果项的样式 */
+  .docusaurus-search-SearchResult {
+    margin-bottom: 8px !important;
+    padding: 8px !important;
+    border-radius: 5px !important;
+    background-color: #f8f9fa !important;
+  }
+  
+  /* 修改搜索结果项的标题样式 */
+  .docusaurus-search-ResultTitle {
+    font-weight: bold !important;
+  }
+  
+  /* 修改搜索结果项的摘要样式 */
+  .docusaurus-search-ResultDescription {
+    color: #666 !important;
+  }
+  
+  
