@@ -51,3 +51,17 @@
   }
   
   
+
+/* 设置链接文本颜色为红色 */
+a.highlighted-link {
+  color: #FF5733;
+  /* 可以根据需要添加其他样式，比如字体加粗 */
+  font-weight: bold;
+  /* 可以根据需要添加其他样式，比如去除下划线 */
+  text-decoration: none;
+}
+
+/* 设置鼠标悬停时链接文本显示下划线 */
+a.highlighted-link:hover {
+  text-decoration: underline;
+}

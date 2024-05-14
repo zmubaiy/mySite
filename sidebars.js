@@ -69,7 +69,7 @@ const sidebars = {
       label: '3、后端',
       type: 'category', 
       link: {
-        title: '后端笔记',
+        title: '3、后端',
         description: '语言包括Java、go、python，后续持续更新',
         type: 'generated-index',
         keywords: ['go','Java', 'python'],

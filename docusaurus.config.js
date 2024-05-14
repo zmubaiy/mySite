@@ -3,9 +3,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '文档中心',
+  title: 'XXX文档中心',
   tagline: '开放式跨端跨框架解决方案，支持使用 React/Vue/Nerv 等框架来开发微信/京东/百度/支付宝/字节跳动/ QQ 小程序/H5 等应用。',
-  favicon: 'img/website/logo1.svg',
+  favicon: 'img/website/logo2.ico',
   url: 'https://your-docusaurus-site.example.com',
   baseUrl: '/',//前置路径
   organizationName: 'zmubaiy', // Usually your GitHub org/user name.
@@ -15,7 +15,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
-    defaultLocale: 'zh',// 默认使用的语言
+    defaultLocale: 'en',// 默认使用的语言
     locales: ['en', 'zh'],// 使用哪些语言
     localeConfigs: { // 语言配置
       en: {
@@ -32,7 +32,7 @@ const config = {
   stylesheets: [
     {
       href: './src/css/search.css',
-      type: 'text/css',
+      type: 'static',
     },
   ],
 
@@ -40,7 +40,39 @@ const config = {
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
-        // Options for the search plugin
+        // whether to index docs pages
+        // indexDocs: true,
+      
+        // Whether to also index the titles of the parent categories in the sidebar of a doc page.
+        // 0 disables this feature.
+        // 1 indexes the direct parent category in the sidebar of a doc page
+        // 2 indexes up to two nested parent categories of a doc page
+        // 3...
+        //
+        // Do _not_ use Infinity, the value must be a JSON-serializable integer.
+        // indexDocSidebarParentCategories: 0,
+      
+        // whether to index blog pages
+        // indexBlog: true,
+      
+        // whether to index static pages
+        // /404.html is never indexed
+        // indexPages: false,
+      
+        // language of your documentation, see next section
+        language: ["en", "zh"],
+      
+        // setting this to "none" will prevent the default CSS to be included. The default CSS
+        // comes from autocomplete-theme-classic, which you can read more about here:
+        // https://www.algolia.com/doc/ui-libraries/autocomplete/api-reference/autocomplete-theme-classic/
+        // When you want to overwrite CSS variables defined by the default theme, make sure to suffix your
+        // overwrites with `!important`, because they might otherwise not be applied as expected. See the
+        // following comment for more information: https://github.com/cmfcmf/docusaurus-search-local/issues/107#issuecomment-1119831938.
+        // style: undefined,
+      
+        // The maximum number of search results shown to the user. This does _not_ affect performance of
+        // searches, but simply does not display additional search results that have been found.
+        // maxSearchResults: 8,
       },
     ],
   ],
@@ -68,8 +100,9 @@ const config = {
     ],
   ],
 
+  //主题配置
   themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    // /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
@@ -78,13 +111,41 @@ const config = {
           hideable: true,
         },
       },
+      // 顶部公告配置
+      // announcementBar: {
+      //   id: 'notice',
+      //   content: '滚动的公告～',
+      //   backgroundColor: '#2160fd',
+      //   textColor: '#ffffff',
+      //   isCloseable: true,
+      // },
+
+      // Lunr.js 的配置
+      search: {
+        // Lunr.js 配置的其他部分
+        // ...
+        lunr: {
+          // 中文语言支持的配置
+          languages: ['en', 'zh'], // 支持的语言列表，包括中文
+          tokenizerSeparator: /[\s\-/]+/,
+          tokenizer: {
+            // 中文分词器
+            separator: /[\s\-/]+/,
+            // 忽略的中文常见停用词
+            stopWordFilter: (token) => {
+              return lunr.stopWordFilter(token) && !token.match(/[\u4e00-\u9fa5]/);
+            },
+          },
+        },
+      },
+
       //导航条
       navbar: {
-        // title: '首页',
+        title: '首页',
         hideOnScroll: true,//页面向下滚动时收起顶部导航
         logo: {
           alt: 'mySite-Logo',
-          src: 'img/website/home.svg',
+          src: 'img/website/logo2.ico',
         },
         //导航条显示的产品文档，如果想增加额外的页面，可在此处
         items: [
@@ -115,8 +176,13 @@ const config = {
           },
           {
             type: "localeDropdown",
-            position: "right",
+            position: "right",// 菜单的显示位置
           },
+          {
+            href: "https://github.com/facebook/docusaurus",
+            label: "GitHub",
+            position: "right",
+          }
         ],
       },
       footer: {
